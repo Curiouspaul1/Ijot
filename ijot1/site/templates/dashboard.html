@@ -28,12 +28,9 @@
             <div class="notes" id="notes">
                 {% if notes %}
                     {% for i in notes %}
-                        <button class="note-container">
-                            {{ i.body }}
-                        </button>
+                        <a href="{{url_for('site.note')}}"><button class="note-container">{{ i.body }}</button></a>
                     {% endfor %}
                 {% endif %}
-
                 
                 {% if error %}
                     <span id="error">{{ error }}</span>
