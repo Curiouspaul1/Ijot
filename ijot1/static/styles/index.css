@@ -1,0 +1,109 @@
+@font-face{
+    font-family:'Montserrat';
+	src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+body{
+	margin:0;
+	padding: 0;
+	font-family: monospace;
+	line-height: 1.2;
+	background: #f4f4f4;
+}
+
+header{
+	margin:0;
+	padding:0;
+}
+
+
+.navbar{
+	background: #1759ff;
+	padding:1.5% 3%;
+	font-size:1em;
+}
+
+.navbar ul{
+	margin:0;
+	padding:0;
+	display:inline;
+}
+
+.navbar li{
+	display:inline;
+}
+
+#nav1 li{
+	margin-right: 10px;
+}
+
+
+#nav2{
+	float: right;
+	margin-right:5%;
+	box-sizing: border-box;
+}
+
+#nav2 li{
+	padding:5px 8px;
+	margin-left:10px;
+	border: 1px solid #f4f4f4;
+	border-radius:5px;
+	background:#fff;
+}
+
+
+#nav2 li:hover{
+	background: none;
+	padding:6px 9px;
+	transition:0.5s;
+	color:#fff;
+	cursor: pointer;
+}
+
+
+section{
+	margin:0 auto;
+	background: #fdfdfd;
+	padding:10%;
+}
+
+
+#sec1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:5%;
+}
+
+#pdiv{
+	margin-top:-10%;
+	margin-right:-10%;
+	line-height: 2;
+}
+
+#pdiv button{
+	padding:5%;
+	border: 1px solid #111;
+	background: none;
+	color:#333;
+	border-radius:10px;
+}
+
+#pdiv button:hover{
+	background:#333;
+	padding:6%;
+	opacity:0.5;
+	color:white;
+	font-weight:lighter;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+
+footer{
+	background:#111;
+	padding:1% 2%;
+	color:white;
+	text-align:center;
+}
+
+
