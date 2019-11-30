@@ -16,7 +16,7 @@
         </div>
         <div class="nav">
             <input type="text" placeholder=" Look up note" size="10px">
-            <a href="#"><button id="logout-btn">Logout</button></a>
+            <a href="{{ url_for('site.logout') }}"><button id="logout-btn">Logout</button></a>
         </div>
         <div class="menu">
             <button>Add a note</button>
@@ -24,7 +24,7 @@
         </div>
         <div class="showcase">
             <button id="add-btn">
-                <h1>+</h1>
+                <h1>+</h1> 
             </button>
             <div class="notes" id="notes">
                 {% if notes %}
