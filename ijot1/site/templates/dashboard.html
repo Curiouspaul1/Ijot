@@ -29,7 +29,7 @@
             <div class="notes" id="notes">
                 {% if notes %}
                     {% for i in notes %}
-                        <a href="#"><button class="note-container" id="{{i.id}}" onclick="getNotes(event)"> {{ i.body }}</button></a>
+                        <button class="note-container" id="{{i.id}}" onclick="getNotes(event)"> {{ i.body }}</button>
                     {% endfor %}
                 {% endif %}
                 

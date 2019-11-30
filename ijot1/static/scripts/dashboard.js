@@ -14,5 +14,5 @@ noteform.classList.add('note-field-active'));
 
 const getNotes = (e) => {
 	console.log(e.target.id);
-	fetch('/note', {body: JSON.stringify({id: e.target.id}), method: 'POST', header: {'Content-Type': 'application/json'}}).catch((err) => console.log(err));
+	fetch('/note', {body: JSON.stringify({id: e.target.id}), method: 'POST', header: {'content-type': 'application/json'}}).catch((err) => console.log(err));
 }

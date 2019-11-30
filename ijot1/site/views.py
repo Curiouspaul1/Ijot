@@ -70,6 +70,13 @@ def dashboard():
 	else:
 		return redirect(url_for('site.signup'))
 
+@sitemod.route('/note',methods=['GET','POST'])
+def note():
+	data = request.get_json('id')
+	id = int(data['id'])
+	note = Notes.query.get(id)
+	return redirect(url_for('fullfeat',note=note))
+		
 
 @sitemod.route('/logout')
 def logout():
