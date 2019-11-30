@@ -12,3 +12,7 @@ const noteform = document.getElementById('note-form')
 noteNextbtn.addEventListener('click',() => 
 noteform.classList.add('note-field-active'));
 
+const getNotes = (e) => {
+	console.log(e.target.id);
+	fetch('/note', {body: JSON.stringify({id: e.target.id}), method: 'POST', header: {'Content-Type': 'application/json'}}).catch((err) => console.log(err));
+}

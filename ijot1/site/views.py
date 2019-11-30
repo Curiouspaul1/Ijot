@@ -70,6 +70,7 @@ def dashboard():
 	else:
 		return redirect(url_for('site.signup'))
 
+
 @sitemod.route('/logout')
 def logout():
 	session.pop('user',None)
