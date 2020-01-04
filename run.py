@@ -5,9 +5,10 @@ from flask_script import Manager
 # flask-migrate
 migrate = Migrate(app,db)
 
-# cli initializer
+"""# cli initializer
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
 #run manager
 manager.run()
+"""
