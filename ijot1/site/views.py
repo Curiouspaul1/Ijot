@@ -1,9 +1,8 @@
-from flask import Blueprint, render_template, url_for, request,g,redirect,flash,session
-from ijot1 import db, ma,app
+from flask import render_template, url_for, request,g,redirect,flash,session
+from ijot1 import db,ma
 from ijot1.models import  User,Notes,note_schema
+from . import sitemod
 import os
-
-sitemod = Blueprint('site', __name__, template_folder='templates')
 
 
 @sitemod.before_request

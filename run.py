@@ -1,7 +1,9 @@
-from ijot1 import app,db
-from flask_migrate import Migrate,MigrateCommand
+from ijot1 import __call__,db
+from flask_migrate import Migrate
+import os
 
 # flask-migrate
+app = __call__('default' or os.getenv('FLASK_CONFIG'))
 migrate = Migrate(app,db)
 
 """# cli initializer
